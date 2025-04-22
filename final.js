@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Data configuration for the skills bar chart
         const skillsData = {
             // Labels for each skill category
-            labels: ['Python', 'JavaScript', 'C++', 'React', 'Node.js', 'Spring Boot'],
+            labels: ['Python', 'AWS', 'C++', 'React', 'Node.js', 'Java Spring Boot'],
             
             // Dataset configuration
             datasets: [{
                 label: 'Skill Level (out of 100)',
                 // Skill ratings on a scale of 0-100
-                data: [90, 85, 90, 90, 80, 60],
+                data: [90, 75, 80, 90, 80, 65],
                 
                 // Colors for each bar (background and border)
                 backgroundColor: [
