@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same navigation as other pages -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search skills or projects...">
+        </div>
+    </header>
+    
+    <main>
+        <section class="skills-section">
+            <h1>My Skills & Experience</h1>
+            
+            <div class="chart-container">
+                <canvas id="skills-chart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="projects-chart"></canvas>
+            </div>
+            
+            <div class="skills-explanation">
+                <h2>My Technical Journey</h2>
+                <p>With over 5 years of experience in web development, I've worked on a variety of projects ranging from simple landing pages to complex web applications.</p>
+                <p>My expertise includes front-end development, responsive design, and creating intuitive user interfaces.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/gabeeaton/" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/gabeeaton" class="social-icon">GitHub</a>
+            </div>
+            <p>&copy; 2025 Gabe Eaton Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- jQuery for search functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Chart.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="jquery.js"></script>
+    <script src="final.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same navigation as home page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search skills or projects...">
+        </div>
+    </header>
+    
+    <main>
+        <section class="portfolio-section">
+            <h1>My Projects</h1>
+            <p>Click on a project title to see more details.</p>
+            
+            <div class="project-container" id="project1">
+                <h2 class="project-title">Nutrify</h2>
+                <div class="project-details">
+                    <img src="nutrify.png" alt="E-Commerce Website">
+                    <p>A fully responsive full-stack nutrition tracking platform.</p>
+                    <ul>
+                        <li>React.js, Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase(Auth)</li>
+                        <li>Supabase(Hosting)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-container" id="project2">
+                <h2 class="project-title">FlameExchange</h2>
+                <div class="project-details">
+                    <img src="cart.png" alt="Mobile App UI">
+                    <p>A dedicated marketplace for Liberty University students</p>
+                    <ul>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-container" id="project2">
+                <h2 class="project-title">RotAlert</h2>
+                <div class="project-details">
+                    <img src="dining.png" alt="Mobile App UI">
+                    <p>Subscription Service to text you a link to the Rot menu every day</p>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Spring Boot</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- More projects -->
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/gabeeaton/" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/gabeeaton" class="social-icon">GitHub</a>
+            </div>
+            <p>&copy; 2025 Gabe Eaton Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <!-- jQuery and jQuery UI Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

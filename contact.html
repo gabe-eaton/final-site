@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search skills or projects...">
+        </div>
+    </header>
+    
+    <main>
+        <section class="contact-section">
+            <h1>Get In Touch</h1>
+            <p>I'm currently available for freelance work and job opportunities. Feel free to reach out!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <p>eatong13@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <p>+1 (217) 821-4099</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <p>Effingham, IL | Lynchburg, VA</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/gabeeaton/" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <div id="formResponse"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/gabeeaton/" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/gabeeaton" class="social-icon">GitHub</a>
+            </div>
+            <p>&copy; 2025 Gabe Eaton Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- jQuery and jQuery UI Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="jquery.js"></script>
+    
+    <script>
+    // Form submission handling
+    $(document).ready(function() {
+        $("#contactForm").submit(function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            $("#formResponse").html("<p class='success-message'>Thank you for your message! I'll get back to you soon.</p>")
+                .hide()
+                .fadeIn(400);
+                
+            // Reset the form
+            this.reset();
+        });
+    });
+    </script>
+</body>
+</html>
